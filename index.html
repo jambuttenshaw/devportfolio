@@ -27,20 +27,17 @@
             <li>
                 <a href="#about">About</a>
             </li>
-	    <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
+						<li>
                 <a href="#experience">Experience</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
             </li>
+						<li>
+                <a href="#projects">Projects</a>
+            </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#education">Education</a>
             </li>
         </ul>
     </header>
@@ -49,7 +46,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Jamie Buttenshaw</h1>
-            <h2>Games Programmer</h2>
+            <h2>Games & Graphics Programmer</h2>
             <a href="JamieButtenshawCV.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -68,24 +65,114 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <p>
-                        Hey! I'm Jamie. I'm a second year student at Abertay University studying Computer Games Technology. I love programming, and I'm particuarly interested in graphics programming and game engine development.
-                        Whenever I'm not programming, I love to hike or climb.
+                        Hey! I'm Jamie. I'm a third year student at Abertay University studying Computer Games Technology, due to graduate in 2024.
+												I'm particuarly interested in maths, graphics programming, and game engine development.
+												<br /><br />
+												I excel in my studies, having achieved 4 awards in my 2 years at University so far.
+												Most notably, in 2022 I was deemed to be the best student overall in second year in the School of Design and Informatics.
+                        <br /><br />
+												I am meticulous with the construction of my projects. I am dedicated, organised, and always produce work that is to the best of my ability.
+                        <br /><br />
+												Outside of programming, I love hiking, climbing, and other outdoor pursuits.
+												<br /><br />
+												Contact me:
+												<br />
+												<a href="mailto:john@example.com">jamie.buttenshaw@gmail.com</a>
+												<br />
+												<a href="https://www.linkedin.com/in/jamie-buttenshaw-04281a192/" target="_blank">Jamie Buttenshaw on LinkedIn</a>
                     </p>
+                </div>
+								<div class="col-md-4">
+                    <img src="images/me.png" />
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
+		
+		<div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+						<div data-date="May 2021 - June 2022">
+                <h3>Trixel Creative</h3>
+                <h4>Restitched Developer</h4>
+                <p>
+                    I was a programmer for Restitched, working on physics, game mechanics and tools development in Unity with C#.
+                </p>
+            </div>
+            <div data-date="June 2018">
+                <h3>Blazing Griffin</h3>
+                <h4>Work Experience</h4>
+                <p>
+                    I had 3 days work experience at Blazing Griffin, where I did quality assurance and programming tasks which included testing a new level, and investigating and prototyping Unity-Twitch integration possibilities.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+		
+		<div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Unity</li>
+						<li>Direct3D 11</li>
+            <li>OpenGL</li>
+						<li>Git/Version Control</li>
+        </ul>
+    </div>
+		
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+								
+								<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cmp305.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Procedurally Generated World</h3>
+                        <p>
+                            In my first semester of year 3, I developed a procedurally generated world as a coursework project.
+														It features terrain created with gradient noise and compute shaders, many different biomes that are laid out using cellular automata rules.
+														It provides a huge landscape to explore that is dynamically created as you fly around.
+														<br /><br />
+														This project was created using C++ and Direct3D 11. The source code for this project will be made public once grades have been released.
+                        </p>
+                        <a href="https://youtu.be/zHdXA_r_vpw">View Demo On YouTube</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+								
+								<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cmp301.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Graphics Programming with Direct3D 11</h3>
+                        <p>
+                            Another coursework project from year 3 was an exploration of graphics programming with C++ and Direct3D 11.
+														I conducted extensive individual research into PBR lighting and materials, shadow mapping, dynamic tessellation, and more.
+														<br /><br />
+														The source code for this project will be made public once grades have been released.
+                        </p>
+                        <a href="https://youtu.be/-VZLLqg_S0c">View Demo On YouTube</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+						
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/restitched.png" />
@@ -94,9 +181,8 @@
                     <div class="project-info">
                         <h3>Restitched</h3>
                         <p>
-                            I am a member of <a href="https://www.trixelcreative.com/">Trixel Creative</a> as a developer on the game <b>Restitched</b>. I work with a team of approximately 20 others to develop Restitched using Unity and C#.
-                            <br /><br />Through this project I have learned loads about team work and collaboration, especially regarding good practices for programming when other people also have to work with your code! I work on a variety of areas of the game,
-                            from graphics programming to game mechanics.
+                            For about a year I was a member of <a href="https://www.trixelcreative.com/">Trixel Creative</a> as a developer on the game <b>Restitched</b>. I worked with a team of up to 20 others to develop Restitched using Unity and C#.
+                            <br /><br />Through this project I learned loads about team work and collaboration, especially regarding good practices for programming and source control. I worked on game mechanics, tools development, graphics programming, and other areas.
                         </p>
                         <a href="https://www.trixelcreative.com/restitched">View Project</a>
                         <br />
@@ -134,8 +220,8 @@
                     <div class="project-info">
                         <h3>Graphics Programming Module</h3>
                         <p>
-                            In my second year of University I studied introductory graphicws programming, using C++ and OpenGL's fixed-function pipeline. This project was my final coursework assessment for the module, and includes a demonstration of everything I learned over the semester.
-                            I pushed myself to really test my knowledge of graphics programming by implementing a 'Portal' system, similar to that seen in Valve's 'Portal' games. I also include advanced demonstrations of procedurally generating and rendering shadow volumes.
+                            This project was my final coursework assessment for the module, created with C++ and OpenGL.
+                            I pushed myself to test my knowledge of graphics programming by implementing a 'Portal' system, similar to that seen in Valve's 'Portal' games. I also include advanced demonstrations of procedurally generating and rendering shadow volumes.
                         </p>
                         <a href="https://www.youtube.com/watch?v=1Q56wm6eYs8">View Demo On YouTube</a>
                         <br />
@@ -194,10 +280,16 @@
             <span class="education-date">Sept 2020 - Current</span>
             <h4>Bachelor of Science in Computer Games Technology</h4>
             <p>
-                Computer Games Technology covers all of the game development essentials, such as mathematics and computer architecture, and explores crucial areas such as software design and graphics programming.
+                Computer Games Technology dives deep into game development, covering crucial areas such as mathematics, computer architecture, software design, and graphics programming.
                 <br />
                 <br />
-                I achieved a grade of A+ in every module completed so far, and was awarded both the <b>Hannah Maclure Prize</b> and <b>David Potter Memorial Prize</b> for excellence in my studies in my first year.
+                I achieved a grade of A+ in 10 out of 10 core modules completed, and have been awarded the following prizes:
+								<ul>
+									<li><b>Alexander D G Kydd Prize</b> <i>(Best 2nd year student overall in School of Design and Informatics in 2021/2022)</i></li>
+									<li><b>David Potter Memorial Prize</b> <i>(Best student overall in Computer Games Technology in 2020/2021)</i></li>
+									<li><b>A D D McKay Senior Prize</b> <i>(High level of performance in maths in 2021/2022)</i></li>
+									<li><b>Hannah Maclure Prize</b> <i>(High level of performance in maths in 2020/2021)</i></li>
+								</ul>
             </p>
         </div>
         <!-- End .education-block -->
@@ -208,41 +300,15 @@
             <h4>SQA Qualifications</h4>
             <p>
                 From my time in school I achieved 5 A's at Scottish Higher, as well as 4 Advanced Higher A's in Maths, Mathematics of Mechanics, Physics and Music.
-                I also ran the school's code club for 4 years, where I gave students their first taste of programming and game development with Scratch.
+                
+								<br /><br />I also ran the school's code club for 4 years, where I gave students their first taste of programming and game development with Scratch.
             </p>
         </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="June 2018">
-                <h3>Blazing Griffin</h3>
-                <h4>Work Experience</h4>
-                <p>
-                    I had 3 days work experience at the studio Blazing Griffin, where I did quality assurance and programming tasks which included testing a new level, and investigating and prototyping Unity-Twitch integration possibilities.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-
     
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Unity</li>
-            <li>OpenGL</li>
-	    <li>Git/Version Control</li>
-        </ul>
-    </div>
     <!-- End #skills -->
     <!--
     <div id="contact">
@@ -257,19 +323,13 @@
         </div>
     </div>
     -->
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <h2>
-            Contact me at jamie.buttenshaw@gmail.com
-        </h2>
-    </div>
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; <span id="current-year">2022</span> Jamie Buttenshaw
+                        Copyright &copy; <span id="current-year">2023</span> Jamie Buttenshaw
                     </p>
                 </div>
                 <div class="col-sm-2 top">
