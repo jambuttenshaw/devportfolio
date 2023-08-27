@@ -641,13 +641,18 @@ footer {
     }
 }
 
+
 .project {
     position: relative;
     max-width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 0 auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
+}
+
+.project-accordion {
+    max-width: 900px;
 }
 
 .project-image {
@@ -665,13 +670,14 @@ footer {
         font-size: 1.5em;
         font-weight: 300;
         color: $heading;
-        margin: 0 0 15px 0;
+        margin: 0 0 0 0;
     }
 
     p {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+        text-align: left;
     }
 }
 
