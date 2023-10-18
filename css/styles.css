@@ -840,6 +840,11 @@ footer {
         display: none
     }
 
+    .card-header h4 {
+        font-size: medium;
+        font-weight: 600;
+    }
+
     .education-block h3, .education-block span {
         float: none
     }
