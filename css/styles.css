@@ -761,6 +761,11 @@ footer {
         transform: none
     }
 
+    .card-header h4 {
+        font-size: larger;
+        font-weight: 400;
+    }
+
     #lead {
         height: auto;
         min-height: auto;
