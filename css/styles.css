@@ -748,18 +748,20 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-    
-    .project-image {
-        display: none
+
+    .project-image
+    {
+        float: none;    
     }
 
     .project-info {
         position: relative;
-        margin: 0;
-        padding: 30px 15px;
+        margin: 30px 15px;
+        padding: 0px;
         top: auto;
         transform: none
     }
+
 
     .card-header h4 {
         font-size: larger;
