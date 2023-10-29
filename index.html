@@ -163,6 +163,47 @@
 
         <div class="accordion container" id="projectAccordion">
 
+            <!-- Begin project card: 'SDF' -->
+            <div class="card">
+                <div class="card-header" id="headingHonours">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseHonours"
+                        aria-expanded="true" aria-controls="collapseHonours">
+                        <h4>
+                            Signed Distance Fields in D3D12
+                        </h4>
+                    </button>
+                </div>
+                <!-- End card header -->
+
+                <!-- Begin project card body -->
+                <div id="collapseHonours" class="collapse show" aria-labelledby="headingHonours" data-parent="#projectAccordion">
+                    <div class="project card-body">
+                        <div class="project-image">
+                            <img src="images/sdf.png" class="rounded" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="text-left">
+                                Honours Project
+                            </h3>
+                            <p class="text-justify">
+                                I'm very excited to be researching the real-time rendering of modifiable Signed Distance Fields (SDFs) as my 4th year honours project!
+                                I find SDFs fascinating as an unconventional method of producing awesome effects and I think they have an exciting future in games.
+                                <br /><br />
+                                I am building a framework in D3D12 that will allow me to investigate the feasibility of real-time deformable SDFs in games. This is an on-going project,
+                                until May 2024.
+
+                                <br /><br />
+                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/SDF_D3D12">&nbsp;View Project On GitHub</a> <br />
+                            </p>
+
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+                <!-- End project card body -->
+            </div>
+
             <!-- Begin project card: 'Restitched' -->
             <div class="card">
                 <div class="card-header" id="headingThree">
@@ -176,7 +217,7 @@
                 <!-- End card header -->
 
                 <!-- Begin project card body -->
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#projectAccordion">
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#projectAccordion">
                     <div class="project card-body">
                         <div class="project-image">
                             <img src="images/restitched.png" class="rounded" />
