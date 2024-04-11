@@ -264,7 +264,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg-2.png);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -307,7 +307,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(47, 63, 83, 0.712);
     z-index: 1
 }
 
@@ -524,6 +524,50 @@ footer {
 
 .education-block ul {
     padding: 0 0 0 15px
+}
+
+
+#showcase {
+    padding: 50px 15px;
+    text-align: center
+}
+
+#showcase h2 {
+    color: #374054;
+    margin-bottom: 50px
+}
+
+#showcase p
+{
+    color: #74808a;
+    margin: 0 0 15px 0;
+    font-size: 0.9em
+}
+
+#showcase .showcase-image-left {
+    float: left;
+    text-align: left;
+}
+#showcase .showcase-image-right {
+    float: right;
+    text-align: right;
+}
+
+#showcase .showcase-col
+{
+    margin-bottom: 50px;
+}
+
+#showcase h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #374054;
+    margin: 0 0 15px 0
+}
+
+#showcase .row
+{
+    text-align: center;
 }
 
 #projects {
