@@ -91,10 +91,10 @@
                 <div class="col-sm">
                     <h3>Signed Distance Fields in Games</h3>
                     <p class="text-justify">
-                        Signed Distance Fields (SDFs) are an alternative representation of geometry to the standard polygons used by most games.
+                        Signed Distance Fields (SDFs) are an alternative representation of geometry to the standard of polygons as used by most games.
                         SDFs have a bunch of unique properties making them useful for constructive solid geometry sculpting tools, deformable and fluid objects, and volumetric effects.
                         <br /><br />
-                        Some notable examples of using SDFs in games include <i>Dreams</i> by Media Molecule, and <i>Claybook</i> by Second Order.
+                        Examples of using SDFs in games include <i>Dreams</i> by Media Molecule, and <i>Claybook</i> by Second Order.
                         However, SDFs haven't seen much use in real-time interactive applications due to performance and memory constraints.
                         <br /><br />
                         My project set out to investigate a method to utilize real-time modifiable SDF geometry using a memory-efficient implementation!
@@ -142,12 +142,12 @@
                 <div class="col-sm">
                     <h3>Making It Fast!</h3>
                     <p class="text-justify">
-                        Rebuild objects made up from hundreds of edits and hundreds of thousands of bricks at interactive frame-rates requires lots of optimizations in the construction pipeline.
+                        Rebuilding objects made up from hundreds of edits and hundreds of thousands of bricks at interactive frame-rates requires lots of optimizations in the construction pipeline.
                         <br /><br />
                         The most important is edit culling. Not every edit that makes up an object will affect every brick - so it is really important to only evaluate the ones that you need to!
                         This is visualized on the right. Green areas are made out of only 1 edit - red areas are made out of lots.
                         <br /><br />
-                        Lists of edits are built for each brick, so that only the required edits are evaluated. This made evaluation up to 50 times faster!
+                        Lists of edits are built for each brick, so that only the required edits are evaluated. This made evaluation up to 30 times faster!
 
                     </p>
                 </div>
