@@ -227,6 +227,22 @@ footer {
     text-decoration: none
 }
 
+.btn-rounded-blue {
+    display: inline-block;
+    color: #fff;
+    background-color: #3498db;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: .5s ease all
+}
+
+.btn-rounded-blue:hover {
+    color: #3498db;
+    background: #fff;
+    text-decoration: none
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
@@ -264,7 +280,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg-2.png);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -307,7 +323,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(47, 63, 83, 0.712);
     z-index: 1
 }
 
@@ -524,6 +540,50 @@ footer {
 
 .education-block ul {
     padding: 0 0 0 15px
+}
+
+
+#showcase {
+    padding: 50px 15px;
+    text-align: center
+}
+
+#showcase h2 {
+    color: #374054;
+    margin-bottom: 50px
+}
+
+#showcase p
+{
+    color: #74808a;
+    margin: 0 0 15px 0;
+    font-size: 0.9em
+}
+
+#showcase .showcase-image-left {
+    float: left;
+    text-align: left;
+}
+#showcase .showcase-image-right {
+    float: right;
+    text-align: right;
+}
+
+#showcase .showcase-col
+{
+    margin-bottom: 50px;
+}
+
+#showcase h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #374054;
+    margin: 0 0 15px 0
+}
+
+#showcase .row
+{
+    text-align: center;
 }
 
 #projects {
