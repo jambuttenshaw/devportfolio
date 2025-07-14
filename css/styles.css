@@ -494,6 +494,23 @@ footer {
     color: #374054
 }
 
+.experiencelogo {
+    white-space:nowrap; 
+    float: left;
+}
+
+.experiencelogohelper {
+    display: inline-block; 
+    vertical-align: middle; 
+    height: 100%;
+}
+
+.experiencelogoimage {
+    width: 100%; 
+    max-width: 150px;
+    vertical-align: middle;
+}
+
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
