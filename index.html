@@ -1,770 +1,112 @@
-﻿<!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jamie Buttenshaw</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta name="color-scheme" content="light dark">
+    <title>Jamie Buttenshaw — Website Moved</title>
+    <meta name="description" content="This website has moved to jamiebuttenshaw.com">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232FBADC'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='58' font-weight='bold' text-anchor='middle' fill='%231a1a1a'%3EJ%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --muted: #a3a3a3;
+            --accent: #2FBADC;
+            --on-accent: #1a1a1a;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #ffffff;
+                --text: #333333;
+                --muted: #666666;
+                --accent: #0099cc;
+                --on-accent: #ffffff;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100svh;
+            display: grid;
+            place-items: center;
+            padding: 1.5rem;
+            font-family: 'Noto Sans', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            text-align: center;
+        }
+
+        main {
+            max-width: 30rem;
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .sub {
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        .big-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5em;
+            margin-top: 2.75rem;
+            padding: 1rem 2.25rem;
+            border-radius: 8px;
+            font-size: clamp(1.4rem, 4.5vw, 2rem);
+            font-weight: 700;
+            color: var(--on-accent);
+            background-color: var(--accent);
+            text-decoration: none;
+            transition: filter 0.2s ease;
+        }
+
+        .big-link:hover {
+            filter: brightness(0.93);
+        }
+
+        .big-link:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .big-link svg {
+            width: 1.1em;
+            height: 1.1em;
+            flex-shrink: 0;
+        }
+    </style>
 </head>
-
 <body>
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Jamie Buttenshaw</h1>
-            <h2>Research Fellow in Graphics Programming</h2>
-            <!-- <a href="JamieButtenshawCV.pdf" class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-6">
-                    <p>
-                        I am a research fellow at CoSTAR National Lab. I work at the cutting edge of real-time graphics to develop graphics, VFX, and engine tools for the future of Virtual Production and immersive experiences.
-                        <br />
-                        <br />
-                        &bull; <b>First-class BSc(Hons)</b> in Computer Games Technology from Abertay University.
-                        <br />
-                        &bull; <b>TIGA Graduate of the Year</b> in programming.
-                        <br />
-                        &bull; Winner of <b>6 distinguished prizes</b> for outstanding performance in my studies.
-                        <br />
-                        &bull; Back-to-back <b><a href="https://ygd.bafta.org/">BAFTA YGD</a> competition finalist</b> in 2017 and 2018.
-                        <br />
-                        <br />
-                        Outside of programming, I love hiking, climbing, and other outdoor pursuits.
-                        <br /><br />
-                        &bull; <a href="mailto:j.buttenshaw@abertay.ac.uk">j.buttenshaw@abertay.ac.uk</a><br />
-                        &bull; <a href="https://www.linkedin.com/in/jamie-buttenshaw-04281a192/" target="_blank">Jamie Buttenshaw on LinkedIn</a><br />
-                        &bull; <a href="https://github.com/jambuttenshaw/" target="_blank">Jamie Buttenshaw on GitHub</a><br />
-                        &bull; <a href="https://jamiebuttenshaw.itch.io/" target="_blank">Jamie Buttenshaw on itch.io</a><br />
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/me.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="showcase" class="background-alt">
-        <div class = "container">
-            <h2 class="heading">Honours Project: Real-time Rendering and Construction of Signed Distance Fields</h2>
-
-            <div class="row showcase-col">
-                <div class="col-sm">
-                    <div id="lead-image showcase-image-left showcase-image-left">
-                        <img src="images/honours/honours-lead.png" class="rounded img-fluid showcase-image" />
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <h3>Signed Distance Fields in Games</h3>
-                    <p class="text-justify">
-                        Signed Distance Fields (SDFs) are an alternative representation of geometry to the standard of polygons as used by most games.
-                        SDFs have a bunch of unique properties making them useful for constructive solid geometry sculpting tools, deformable and fluid objects, and volumetric effects.
-                        <br /><br />
-                        Examples of using SDFs in games include <i>Dreams</i> by Media Molecule, and <i>Claybook</i> by Second Order.
-                        However, SDFs haven't seen much use in real-time interactive applications due to performance and memory constraints.
-                        <br /><br />
-                        My project set out to investigate a method to utilize real-time modifiable SDF geometry using a memory-efficient implementation!
-                        
-                    </p>
-                </div>
-            </div>
-            <div class="row showcase-col">
-                <div class="col-sm">
-                    <h3>What Does It Do?</h3>
-                    <p class="text-justify">
-                        My project builds geometry out of a list of primitive shapes, called 'edits', that can be combined together using addition and subtraction. An object can be built from hundreds of edits.
-                        <br /><br />
-                        By reconstructing the object every frame, and animating the edits that make up an object, dynamic geometry can be created! Using smooth addition and subtraction, really cool geometry can be made that would be difficult to achieve using triangles.
-                        <br /><br />
-                        Previously, it was not possible to build dynamic geometry from SDFs represented by a sparse structure of discrete volumes of data.
-
-                    </p>
-                </div>
-                <div class="col-sm">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VDC3vSBE-bk" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row showcase-col">
-                <div class="col-sm showcase-image-left">
-                    <img src="images/honours/lighting.png" class="rounded img-fluid showcase-image" />
-                </div>
-                <div class="col-sm">
-                    <h3>How Does It Work?</h3>
-                    <p class="text-justify">
-                        The challenge is to build a representation of SDFs that is memory-efficient, but also fast to construct and render.
-                        This was done by constructing objects out of 'Bricks' - which are small volumes of space that contain SDF data. Objects can then be built out of up to hundreds of thousands of individual bricks.
-                        This means that bricks only need to be built around the surface of the object - making it much more memory efficient!
-                        <br /><br />
-                        These bricks can then be rendered using DirectX 12 hardware-accelerated raytracing. When a ray intersects with a brick, sphere-tracing is used to reach the surface of the SDF.
-                        <br /><br />
-                        Objects are built using the massive parallel compute capabilities of the GPU. Bricks are hierarchically refined to better approximate the surface. Once the bricks are small enough, they are filled in with SDF data to complete the object.
-                        Using the GPU to build the geometry makes it fast enough to use in real-time!
-                    </p>
-                </div>
-            </div>
-            <div class="row showcase-col">
-                <div class="col-sm">
-                    <h3>Making It Fast!</h3>
-                    <p class="text-justify">
-                        Rebuilding objects made up from hundreds of edits and hundreds of thousands of bricks at interactive frame-rates requires lots of optimizations in the construction pipeline.
-                        <br /><br />
-                        The most important is edit culling. Not every edit that makes up an object will affect every brick - so it is really important to only evaluate the ones that you need to!
-                        This is visualized on the right. Green areas are made out of only 1 edit - red areas are made out of lots.
-                        <br /><br />
-                        Lists of edits are built for each brick, so that only the required edits are evaluated. This made evaluation up to 30 times faster!
-
-                    </p>
-                </div>
-                <div class="col-sm showcase-image-right">
-                    <img src="images/honours/edit-culling.png" class="rounded img-fluid showcase-image" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <h3 class="text-center">Find Out More!</h3>
-                    <a href="Dissertation.pdf" class="btn-rounded-blue">Read my Dissertation!</a>
-                </div>
-                <div class="col-sm">
-                    <p class="text-justify">
-                        The videos section below documents my journey to building my honours project - from beginning to work with SDFs to building the advanced hierarchical construction algorithm for the GPU.
-                        <br /><br />
-                        <a href="https://github.com/jambuttenshaw/sdf_d3d12">Check out my project on GitHub too!</a>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div id = "videos">
-        <div class = "container">
-            <h2 class="heading">Videos</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VDC3vSBE-bk" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y6qnGLtWf10" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y6Reo1VShN4" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZtbVMgXsn9E" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rMG6M1J1dwk" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WJ4JSrL51zQ" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="July 2024 - Present">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 experiencelogo">
-                            <span class="experiencelogohelper"></span><img src="images/costar.png" class="experiencelogoimage" />
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Research Fellow</h3>
-                            <h4>CoSTAR National Lab</h4>
-                            <p>
-                                As a Research Fellow as part of the CoSTAR National Lab, I work at the cutting edge of real-time graphics to develop graphics, VFX, and engine tools for the future of Virtual Production and immersive experiences.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-date="September 2023 - December 2023">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 experiencelogo">
-                            <span class="experiencelogohelper"></span><img src="images/abertay.png" class="experiencelogoimage" />
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Teaching Assistant</h3>
-                            <h4>Abertay University</h4>
-                            <p>
-                                I was a graphics programming teaching assistant for 3rd year students. I help students get to grips with graphics pipelines and shader programming. 
-                                Communicating complicated concepts to students unfamiliar with the subject was a great learning experience, and I find it very rewarding as well as good practice for my own graphics knowledge.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-date="June 2023 - September 2023">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 experiencelogo">
-                            <span class="experiencelogohelper"></span><img src="images/abertay.png" class="experiencelogoimage" />
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Research Assistant</h3>
-                            <h4>Abertay University</h4>
-                            <p>
-                                For 4 months I was a research assistant at Abertay University, working on a multiplayer XR Sandbox with
-                                emerging VR technology, C++, and Unreal Engine 5. This involved plugin development for UE5, native XR development, and multiplayer cross-platform development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-date="May 2021 - June 2022">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 experiencelogo">
-                            <span class="experiencelogohelper"></span><img src="images/trixel.png" class="experiencelogoimage" />
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Gameplay and Tools Programmer</h3>
-                            <h4>Trixel Creative</h4>
-                            <p>
-                                Alongside my studies, I spent a year programming for the community-driven project <i>Restitched</i>,
-                                working on physics, game mechanics, and tools development in Unity with C#.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="projects">
-        <h2 class="heading">Projects</h2>
-
-        <div class="accordion container" id="projectAccordion">
-            <!--
-                <div class="card">
-                    <div class="card-header" id="headingHonours">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseHonours"
-                        aria-expanded="true" aria-controls="collapseHonours">
-                        <h4>
-                            Ray-tracing Signed Distance Fields
-                        </h4>
-                    </button>
-                </div>
-                <div id="collapseHonours" class="collapse show" aria-labelledby="headingHonours" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/sdf.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Honours Project
-                            </h3>
-                            <p class="text-justify">
-                                I'm researching real-time rendering and modification of Signed Distance Fields (SDFs) as my 4th year honours project. To do this, I'm developing a framework and renderer using DirectX12 and DirectX Ray-tracing.
-                                <br /><br />
-                                I find SDFs fascinating as a 3D graphics primitive with lots of potential for exciting use in games, and I am excited to research how to render and modify them fast and efficiently.
-                                <br /><br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/SDF_D3D12">&nbsp;View Project On GitHub</a> <br />
-                                &bull; <a href="https://youtu.be/VDC3vSBE-bk">&nbsp;View Demo on YouTube</a>
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
-            <!-- Begin project card: 'Restitched' -->
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="true" aria-controls="collapseThree">
-                        <h4>
-                            <i>Restitched</i> &nbsp; by Trixel Creative
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/restitched.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Developing Large Projects in a Team
-                            </h3>
-                            <p class="text-justify">
-                                For about a year I volunteered as a member of <a
-                                    href="https://www.trixelcreative.com/">Trixel
-                                    Creative</a> to help develop their game <i>Restitched</i>. I worked with a team of
-                                up to 20 others to develop Restitched using Unity and C#.
-                                <br /><br />
-                                Through this project I gained invaluable knowledge about team work and
-                                collaboration,
-                                especially regarding good practices for programming and source control on a larger
-                                scale. I worked on game
-                                mechanics, tools development, graphics programming, and other areas.
-                                <br /><br />
-                                &bull; <a href="https://www.trixelcreative.com/restitched">&nbsp;View Project</a> <br />
-                                &bull; <a href="https://store.steampowered.com/app/1361090/Restitched/">&nbsp;View Steam
-                                    Page</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'Procedurally generated world' -->
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        <h4>
-                            Compute Shader Procedural Terrain
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/cmp305.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Using Compute Shaders to Generate Intricate Terrain
-                            </h3>
-                            <p class="text-justify">
-                                I developed a procedurally generated world as a coursework project.
-                                The world features extensively customizable heightmap-based terrain generated using
-                                gradient noise, cellular automata, and compute shaders.
-                                It demonstrates a huge landscape to explore that is dynamically created on-the-fly as
-                                you explores.
-                                <br /><br />
-                                The goal of this project was to create a customizable and interesting world that can be
-                                edited and explored in real time.
-                                This project was created using C++ and Direct3D 11.
-                                <br /><br />
-                                &bull; <a href="https://youtu.be/rMG6M1J1dwk">&nbsp;View Demo On YouTube</a><br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/ProceduralWorldGeneration">&nbsp;View Source on GitHub</a>
-                            </p>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'D3D graphics programming' -->
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="true" aria-controls="collapseTwo">
-                        <h4>
-                            PBR Graphics with D3D11
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/cmp301.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Exploring PBR Rendering and More with D3D11
-                            </h3>
-                            <p class="text-justify">
-                                This project is a deep-dive into graphics programming with C++ and Direct3D 11.
-                                I conducted extensive individual research into PBR lighting and materials, which
-                                visually
-                                set my project apart from my peers.
-                                I also researched and implemented many other features, including dynamic tessellation,
-                                pre- and post-processing effects
-                                using compute shaders such as tone-mapping and bloom, and various shadow techniques.
-                                <br /><br />
-                                &bull; <a href="https://youtu.be/WJ4JSrL51zQ">&nbsp;View Demo On YouTube</a><br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/GraphicsProgrammingDemo">&nbsp;View Source on
-                                    GitHub</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'Crystal caverns' -->
-            <div class="card">
-                <div class="card-header" id="headingFive">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="true" aria-controls="collapseFive">
-                        <h4>
-                            SFMLEngine / Crystal Caverns
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/crystalcaverns.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                From Framework to Game Engine
-                            </h3>
-                            <p class="text-justify">
-                                I developed Crystal Caverns as a final coursework project for my first year of
-                                university. Notably, it is created using my own
-                                advanced framework built on top of the <a href="https://www.sfml-dev.org/index.php">SFML
-                                    library</a>. I went excessively above and beyond to significantly challenge myself,
-                                foraying
-                                into areas that I wouldn't covered at university for several years to come.
-                                <br /><br />
-                                SFMLEngine has a variety of systems, including resource management,
-                                ECS, custom shaders and 2D lighting, physics, collision systems, and more.
-                                See the <a href="https://github.com/jambuttenshaw/SFMLEngine">README</a> for details on
-                                the features of SFMLEngine.
-                                <br /><br />
-                                &bull; <a href="https://jamiebuttenshaw.itch.io/crystal-caverns">&nbsp;View Crystal Caverns On
-                                    Itch</a> <br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/SFMLEngine">&nbsp;View SFMLEngine On
-                                    Github</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'Animix' -->
-            <div class="card">
-                <div class="card-header" id="headingTen">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen"
-                        aria-expanded="true" aria-controls="collapseTen">
-                        <h4>
-                            <i>Animix</i> &nbsp; Skeletal Animation Engine
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/animix.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Architecture for an Animation Engine
-                            </h3>
-                            <p class="text-justify">
-                                I built Animix as a 4th year university project. It is a 2D and 3D animation engine, with a primary focus on 3D skeletal animation.
-                                It is built with Abertay University's game framework 'gef'.
-
-                                It features a neat state machine system, where the state machine can be described in JSON; including all possible states,
-                                blend trees to produce poses for each state, transitions between states, and parameters to control variables within the blend tree.
-                                
-                                I put a significant focus on practicing good software design and making good use of C++ to build this project.
-                                <br /><br />
-                                &bull; <a href="https://github.com/jambuttenshaw/animix">&nbsp;View Project On GitHub</a>
-                                <br />
-                                &bull; <a href="https://youtu.be/WvJ-sozoGK8">&nbsp;View Demo On YouTube</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'CMP203' -->
-            <div class="card">
-                <div class="card-header" id="headingSix">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
-                        aria-expanded="true" aria-controls="collapseSix">
-                        <h4>
-                            OpenGL Graphics Programming
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/cmp203.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Graphics Programming Basics... and Beyond
-                            </h3>
-                            <p class="text-justify">
-                                This project was a demonstration of fundamental graphics programming techniques using
-                                the legacy fixed-function OpenGL pipeline.
-                                <br /><br />
-                                However, I pushed myself to test my knowledge of graphics programming by implementing
-                                portals, using stencil buffer magic, depth buffer trickery, and a good dose of matrix
-                                maths. I also include
-                                advanced demonstrations of procedurally generating and rendering shadow volumes.
-                                <br /><br />
-                                &bull; <a href="https://www.youtube.com/watch?v=1Q56wm6eYs8">&nbsp;View Demo On YouTube</a>
-                                <br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/jambuttenshaw/cmp203-coursework/">&nbsp;View Project On Github</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'Stealth' -->
-            <div class="card">
-                <div class="card-header" id="headingSeven">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven"
-                        aria-expanded="true" aria-controls="collapseSeven">
-                        <h4>
-                            Stealth - BAFTA YGD Finalist
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/stealth.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                Where It All Began
-                            </h3>
-                            <p class="text-justify">
-                                Stealth is an atmospheric 2D platforming game about evading guards in a dark warehouse.
-                                I made this in 2016-17, at the age of 14.
-                                Stealth was my entry in the 2017 <a href="http://ygd.bafta.org/">BAFTA YGD</a>
-                                competition,
-                                in the 10-14 year old category. I was one of 10 finalists in this category. Stealth is
-                                built using Python and Pygame.
-                                <br /><br />
-                                It was with this project I really got excited about game development, and it truly
-                                sparked a passion for programming that I've followed ever since.
-                                <br /><br />
-                                &bull; <a href="https://jamiebuttenshaw.itch.io/stealth">&nbsp;View Project On Itch</a>
-                                <br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Sigton/stealth">&nbsp;View Project On Github</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-            <!-- Begin project card: 'Tim's Adventure' -->
-            <div class="card">
-                <div class="card-header" id="headingEight">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight"
-                        aria-expanded="true" aria-controls="collapseEight">
-                        <h4>
-                            Tim's Adventure - BAFTA YGD Finalist
-                        </h4>
-                    </button>
-                </div>
-                <!-- End card header -->
-
-                <!-- Begin project card body -->
-                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#projectAccordion">
-                    <div class="project card-body">
-                        <div class="project-image">
-                            <img src="images/timsadventure.png" class="rounded" />
-                        </div>
-                        <div class="project-info">
-                            <h3 class="text-left">
-                                A Bigger Challenge.
-                            </h3>
-                            <p class="text-justify">
-                                Tim's Adventure was my second entry in the <a href="http://ygd.bafta.org/">BAFTA YGD</a>
-                                competition, in 2018. It was one of 10 finalists in the 15-18 year old category. I built
-                                this also using Python and Pygame, and it's an adventure game about a world of Jelly
-                                Bean characters.
-                                <br /><br />
-                                After having a great experience the previous year, I was excited to try my luck a second
-                                time. This time I had even greater goals, both in terms of game design and development,
-                                which significantly pushed me forward as a programmer.
-                                <br /><br />
-                                &bull; <a href="https://jamiebuttenshaw.itch.io/tims-adventure">&nbsp;View Project On Itch</a>
-                                <br />
-                                <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Sigton/tims_adventure">&nbsp;View Project On Github</a>
-                            </p>
-
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                </div>
-                <!-- End project card body -->
-            </div>
-
-        </div>
-        <!-- End #projectAccordion -->
-
-    </div>
-    <!-- End #projects -->
-
-    <div id="education" class="background-alt">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Abertay, Dundee</h3>
-            <span class="education-date">Sept 2020 - May 2024</span>
-            <h4>Bachelor of Science in Computer Games Technology</h4>
-            <p>
-                Computer Games Technology dives deep into game development, covering crucial areas such as mathematics,
-                computer architecture, software design, and graphics programming.
-                <br />
-                <br />
-                I achieved a grade of an A or higher in every single module, and have been awarded the following
-                prizes:
-            <ul>
-                <li><b>Alexander D G Kydd Prize</b> <i>(Best 2nd year student overall in School of Design and
-                        Informatics in 2021/2022)</i></li>
-                <li><b>David Potter Memorial Prize</b> <i>(Best student overall in Computer Games Technology in
-                        2020/2021)</i></li>
-                <li><b>A D D McKay Senior Prize</b> <i>(High level of performance in maths in 2021/2022)</i></li>
-                <li><b>Hannah Maclure Prize</b> <i>(High level of performance in maths in 2020/2021)</i></li>
-            </ul>
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Greenfaulds High School, Cumbernauld</h3>
-            <span class="education-date">2014 - 2020</span>
-            <h4>SQA Qualifications</h4>
-            <p>
-                From my time in school I achieved 5 A's at Scottish Higher, as well as 4 Advanced Higher A's in Maths,
-                Mathematics of Mechanics, Physics and Music.
-
-                <br /><br />I also ran the school's code club for 4 years, where I gave students their first taste of
-                programming and game development with Scratch.
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <footer>
-        <div class="container" >
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2023</span> Jamie Buttenshaw
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/jambuttenshaw" target="_blank"><i class="fa fa-github"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jamie-buttenshaw-04281a192/" target="_blank"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/JamieButtenshaw" target="_blank"><i class="fa fa-twitter"
-                                    aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.min.js"></script>
+    <main>
+        <h1>This website has moved</h1>
+        <p class="sub">
+            Jamie Buttenshaw&rsquo;s new website is live. Follow the link below to continue.
+        </p>
+        <a class="big-link" href="https://jamiebuttenshaw.com">
+            <span>jamiebuttenshaw.com</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <polyline points="13 5 20 12 13 19"></polyline>
+            </svg>
+        </a>
+    </main>
 </body>
-
 </html>
